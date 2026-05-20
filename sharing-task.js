@@ -37,6 +37,16 @@ reusable functions that solve specific tasks. This activity encourages:
 // 4. Return the result.
 
 
+function personDetails(name , role){
+    let formattedRole = role.toUpperCase();
+    let personInfo = `Name: ${name}, Role: ${role.toUpperCase()}`;
+    return personInfo;
+}
+
+let details = personDetails("Alice" , "speaker");
+console.log(details);
+
+
 // ============================================
 // 🧩 Task 2: Calculate Event Cost
 // ============================================
@@ -51,6 +61,16 @@ reusable functions that solve specific tasks. This activity encourages:
 // 3. If so, apply a 10% discount.
 // 4. Return the final total.
 
+function calculateTotalCost(attendees , costPerAttendee){
+    let total = attendees * costPerAttendee;
+    if(attendees > 100){
+        total = total -(total * 0.10);
+    }
+    return total;
+}
+let result = calculateTotalCost(110 , 25);
+console.log(result);
+
 
 // ============================================
 // 🧩 Task 3: Validate Email
@@ -63,6 +83,12 @@ reusable functions that solve specific tasks. This activity encourages:
 // Steps:
 // 1. Check if the string includes both "@" and ".".
 // 2. Return true or false accordingly.
+
+function isValidEmail(email){
+    return email.includes("@") && email.includes(".");
+}
+console.log(isValidEmail("congo234@gmail.com"));
+
 
 
 // ============================================
@@ -89,3 +115,5 @@ reusable functions that solve specific tasks. This activity encourages:
 // - Explain how your team approached the design and testing process
 
 // ✅ Bonus: Can you extend any of the functions to be more flexible or reusable?
+
+
