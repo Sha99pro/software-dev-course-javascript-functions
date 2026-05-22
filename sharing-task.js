@@ -37,13 +37,16 @@ reusable functions that solve specific tasks. This activity encourages:
 // 4. Return the result.
 
 
-function personDetails(name , role){
-    let formattedRole = role.toUpperCase();
-    let personInfo = `Name: ${name}, Role: ${role.toUpperCase()}`;
+function personDetails(name, role) {
+    let formattedRole = role.charAt(0).toUpperCase() + role.slice(1);
+
+    let personInfo = `Name: ${name}, Role: ${formattedRole}`;
+
     return personInfo;
 }
 
-let details = personDetails("Alice" , "speaker");
+let details = personDetails("Alice", "speaker");
+
 console.log(details);
 
 
