@@ -91,20 +91,20 @@ greet("Charlie");
 
 
 // Refactor Script 2 - Sum calculation
-function add(x , y){
-    return x + y;
+function add(num1 , num2){
+    return num1 + num2;
 }
 let sum1 = add(5, 10);
-console.log("The sum of 5 and 10 is " + sum1);
+console.log(`The sum of ${num1} and ${num2} is: ${sum1}`);
 
 
 
 // Refactor Script 3 - Product calculation
-function product1(x , y){
-   return x * y;
+function product1(num1 , num2){
+   return num1 * num2;
 }
 let finalProduct = product1(5 , 10);
-console.log("The product of 5 and 10 is " + finalProduct);
+console.log(`The product of ${num1} and ${num2} is: ${finalProduct}`);
 
 
 
